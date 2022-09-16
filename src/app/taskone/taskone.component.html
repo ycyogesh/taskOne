@@ -1,0 +1,13 @@
+
+
+<div>
+    <label for="uname">Username</label>
+    <input type="text" (keyup)="enterChar($event)" [(ngModel)] = "twoWay" name="uname" id="">
+</div>
+<div>
+    <h3>Two Way Binding</h3>
+    <span>{{twoWay}}</span>
+</div>
+<div>
+    <button [disabled] = "isChangeBtn" (click)="clearBtn()">clear</button>
+</div>
