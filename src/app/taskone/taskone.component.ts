@@ -23,5 +23,6 @@ export class TaskoneComponent implements OnInit {
   }
   clearBtn(){
     this.twoWay = ""
+    this.isChangeBtn = true
   }
 }
