@@ -9,8 +9,8 @@ export class TaskoneComponent implements OnInit {
 
   constructor() { }
   userName : string = "";
-  
-  isChangeBtn : boolean = true
+ 
+  isActive : boolean = true
   ngOnInit(): void {
 
   }

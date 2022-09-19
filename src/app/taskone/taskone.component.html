@@ -6,8 +6,8 @@
 </div>
 <div>
     <h3>Two Way Binding</h3>
-    <p>{{userName}}</p>
+    <p [ngStyle]="{'font-size': '40px','color' : 'lime'}">{{userName}}</p>
 </div>
 <div>
-    <button [disabled] = "!userName" (click)="clearBtn()">clear</button>
+    <button [ngClass]="isActive?'':'classBtn'" [disabled] = "!userName" (click)="clearBtn()">Clear!</button>
 </div>
