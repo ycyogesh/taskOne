@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskoneComponent } from './taskone/taskone.component';
 import { FormsModule } from "@angular/forms";
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskoneComponent
+    TaskoneComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
