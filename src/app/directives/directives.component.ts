@@ -10,7 +10,7 @@ export class DirectivesComponent implements OnInit {
   constructor() { }
 
   isActive : boolean = true;
-  cities = ['trichy','ariyalur','villupuram','chennai','madurai','thiruvannamalai']
+  cities = ['trichy','ariyalur','villupuram','chennai','thiruvannamalai']
 
   ngOnInit(): void {
   }
