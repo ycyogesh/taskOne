@@ -2,12 +2,12 @@
 
 <div>
     <label for="uname">Username</label>
-    <input type="text" (keyup)="enterChar($event)" [(ngModel)] = "twoWay" name="uname" id="">
+    <input type="text" [(ngModel)] = "userName" name="uname" id="">
 </div>
 <div>
     <h3>Two Way Binding</h3>
-    <p>{{twoWay}}</p>
+    <p>{{userName}}</p>
 </div>
 <div>
-    <button [disabled] = "isChangeBtn" (click)="clearBtn()">clear</button>
+    <button [disabled] = "!userName" (click)="clearBtn()">clear</button>
 </div>

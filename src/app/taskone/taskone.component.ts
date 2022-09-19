@@ -8,21 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class TaskoneComponent implements OnInit {
 
   constructor() { }
-  twoWay : any;
+  userName : string = "";
   
   isChangeBtn : boolean = true
   ngOnInit(): void {
 
   }
-  enterChar(event : any){
-    if(event.target.value){
-      this.isChangeBtn = false
-      return;
-    }
-    this.isChangeBtn = true
-  }
+
   clearBtn(){
-    this.twoWay = ""
-    this.isChangeBtn = true
+    this.userName = ""
   }
 }
