@@ -9,5 +9,5 @@
     <p [ngStyle]="{'font-size': '40px','color' : 'lime'}">{{userName}}</p>
 </div>
 <div>
-    <button [ngClass]="isActive?'':'classBtn'" [disabled] = "!userName" (click)="clearBtn()">Clear!</button>
+    <button [ngClass]="!userName?'':'classBtn'" [disabled] = "!userName" (click)="clearBtn()">Clear!</button>
 </div>
