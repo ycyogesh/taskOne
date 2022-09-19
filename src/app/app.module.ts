@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { TaskoneComponent } from './taskone/taskone.component';
 import { FormsModule } from "@angular/forms";
 import { DirectivesComponent } from './directives/directives.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskoneComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ChildComponent,
+    ParentComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
