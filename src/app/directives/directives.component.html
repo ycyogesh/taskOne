@@ -13,5 +13,11 @@
     </ul>
 </div>
 <div>
-    
+    <button (click)="isActive = !isActive">ElsePart</button>
+    <p *ngIf="isActive; else elsePart">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        Doloribus, consequuntur. Et, possimus! Laudantium similique,
+        et laborum itaque quam cum est ipsa consequatur ipsam quisquam harum fuga a? Quasi,
+        nostrum sed.</p>
+    <ng-template #elsePart> This is Else Part</ng-template>
 </div>
