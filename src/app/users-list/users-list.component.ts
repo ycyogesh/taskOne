@@ -69,6 +69,7 @@ export class UsersListComponent implements OnInit {
   removeUser(index:any){
     console.log("Entered Parent",index);
     this.usersList.splice(index,1)
+    alert("Removed Successfully")
   }
   
 
