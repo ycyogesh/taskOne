@@ -9,6 +9,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { UserComponent } from './user/user.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserComponent } from './user/user.component';
     DirectivesComponent,
     ChildComponent,
     ParentComponent,
-    UserComponent
+    UserComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,

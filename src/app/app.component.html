@@ -1,4 +1,4 @@
-<div class="property">
+<!-- <div class="property">
   <app-taskone></app-taskone>
 </div>
 <div class="directives">
@@ -7,10 +7,14 @@
 <div>
   <app-child [user]="userDetails" (addNewUser)="newUserEmit($event)"></app-child>
 </div>
-<!-- <div>
+<div>
   <app-parent></app-parent>
-</div> -->
+</div>
 <p>Users List</p>
 <ng-container *ngFor="let user of users">
   <app-user [userDetails]="user"></app-user>
-</ng-container>
+</ng-container> -->
+
+<div>
+  <app-users-list></app-users-list>
+</div>
