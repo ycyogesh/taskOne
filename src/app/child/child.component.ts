@@ -18,7 +18,6 @@ export class ChildComponent implements OnInit {
 
   ngOnChanges(){
     console.log("Updated");     // Every changes intimation
-    
   }
 
   addUser(){
