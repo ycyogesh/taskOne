@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 interface User {
   id : number,
@@ -17,7 +17,6 @@ interface User {
 export class UsersListComponent implements OnInit {
 
   usersList : User[] = [];
-  
   constructor() { }
 
   ngOnInit() {
@@ -67,7 +66,8 @@ export class UsersListComponent implements OnInit {
     ]
 
   }
-  removeUser(index:number){
+  removeUser(index:any){
+    console.log("Entered Parent",index);
     this.usersList.splice(index,1)
   }
   

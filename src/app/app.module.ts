@@ -10,6 +10,7 @@ import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { UserComponent } from './user/user.component';
 import { UsersListComponent } from './users-list/users-list.component';
+import { UsersdetailComponent } from './usersdetail/usersdetail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UsersListComponent } from './users-list/users-list.component';
     ChildComponent,
     ParentComponent,
     UserComponent,
-    UsersListComponent
+    UsersListComponent,
+    UsersdetailComponent
   ],
   imports: [
     BrowserModule,
