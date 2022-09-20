@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'taskOne';
+  userDetails = "";
+  users : Array<string> = []
+  newUserEmit(event: string){
+    this.users.push(event);
+    console.log(event);
+  }
 }
+

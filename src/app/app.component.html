@@ -5,11 +5,12 @@
   <app-directives></app-directives>
 </div>
 <div>
-  <app-child></app-child>
+  <app-child [user]="userDetails" (addNewUser)="newUserEmit($event)"></app-child>
 </div>
-<div>
+<!-- <div>
   <app-parent></app-parent>
-</div>
-<div>
-  <app-user></app-user>
-</div>
+</div> -->
+<p>Users List</p>
+<ng-container *ngFor="let user of users">
+  <app-user [userDetails]="user"></app-user>
+</ng-container>
